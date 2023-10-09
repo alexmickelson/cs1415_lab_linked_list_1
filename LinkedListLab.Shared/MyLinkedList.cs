@@ -24,7 +24,7 @@ public class MyLinkedList
       index--;
       current = current.Next;
     }
-    return current.Data;
+    return current?.Data ?? "";
   }
 
   public void Append(string newData)
