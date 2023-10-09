@@ -6,63 +6,22 @@ public class MyLinkedList
   {
     get
     {
-      var current = head;
-      var count = 0;
-      while (current != null)
-      {
-        count++;
-        current = current.Next;
-      }
-      return count;
+      return -1;
     }
   }
   public string DataAtIndex(int index)
   {
-    var current = head;
-    while (index != 0)
-    {
-      index--;
-      current = current.Next;
-    }
-    return current?.Data ?? "";
+    return "";
   }
 
   public void Append(string newData)
   {
-
-    if (head == null)
-    {
-      head = new MyNode() { Data = newData };
-      return;
-    }
-
-    var current = head;
-    while (current.Next != null)
-    {
-      current = current.Next;
-    }
-
-    current.Next = new MyNode() { Data = newData };
+    return;
   }
 
   public string Pop()
   {
-    if (head == null)
-      return "";
-    if(head.Next == null)
-    {
-      var firstOutput = head.Data;
-      head = null;
-      return firstOutput;
-    }
-
-    var current = head;
-    while (current.Next?.Next != null)
-      current = current.Next;
-
-    string output = current.Next!.Data;
-    current.Next = null;
-    return output;
+    return "";
   }
 
   public override string ToString()
