@@ -1,29 +1,33 @@
+using FluentAssertions;
+using LinkedList.Logic;
+
+namespace LinkedList.Test;
 public class Part1Tests
 {
-  [Test]
+  [Fact]
   public void TestAppendAndCount1()
   {
     var list = new MyLinkedList();
     list.Append("first");
 
-    Assert.AreEqual(1, list.Count);
+    list.Count.Should().Be(1);
   }
 
-  [Test]
+  [Fact]
   public void TestAppendAndCount2()
   {
     var list = new MyLinkedList();
     list.Append("first");
     list.Append("second");
 
-    Assert.AreEqual(2, list.Count);
+    list.Count.Should().Be(2);
   }
 
-  [Test]
+  [Fact]
   public void TestAppendAndCount3()
   {
     var list = new MyLinkedList();
 
-    Assert.AreEqual(0, list.Count);
+    list.Count.Should().Be(0);
   }
 }

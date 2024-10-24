@@ -1,27 +1,29 @@
+using FluentAssertions;
+using LinkedList.Logic;
+
 public class Part2Tests
 {
-  // [Test]
-  // public void TestDataAtIndex1()
+  // [Fact]
+  // public void FactDataAtIndex1()
   // {
   //   var list = new MyLinkedList();
   //   list.Append("first");
 
-  //   Assert.AreEqual("first", list.DataAtIndex(0));
+  //   list.DataAtIndex(0).Should().Be("first");
   // }
 
-  // [Test]
-  // public void TestDataAtIndex2()
+  // [Fact]
+  // public void FactDataAtIndex2()
   // {
   //   var list = new MyLinkedList();
   //   list.Append("first");
   //   list.Append("second");
-
-  //   Assert.AreEqual("second", list.DataAtIndex(1));
+  //   list.DataAtIndex(1).Should().Be("second");
   // }
 
 
-  // [Test]
-  // public void TestDataAtIndex3()
+  // [Fact]
+  // public void FactDataAtIndex3()
   // {
   //   var list = new MyLinkedList();
   //   list.Append("first");
@@ -30,17 +32,17 @@ public class Part2Tests
   //   list.Append("fourth");
   //   list.Append("fifth");
 
-  //   Assert.AreEqual("third", list.DataAtIndex(2));
-  //   Assert.AreEqual("fourth", list.DataAtIndex(3));
-  //   Assert.AreEqual("fifth", list.DataAtIndex(4));
+  //   list.DataAtIndex(2).Should().Be("third");
+  //   list.DataAtIndex(3).Should().Be("fourth");
+  //   list.DataAtIndex(4).Should().Be("fifth");
   // }
 
-  // [Test]
-  // public void TestDataAtIndex4()
+  // [Fact]
+  // public void FactDataAtIndex4()
   // {
   //   var list = new MyLinkedList();
 
   //   // If list is empty, return empty string as the data
-  //   Assert.AreEqual("", list.DataAtIndex(0));
+  //   list.DataAtIndex(0).Should().Be("");
   // }
 }

@@ -1,3 +1,5 @@
+namespace LinkedList.Logic;
+
 public class MyLinkedList
 {
   private MyNode? head { get; set; }
